@@ -1,0 +1,19 @@
+form{
+    height:auto;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+form>p{
+    color: red;
+}
+input{
+    height: 30px;
+}
+button{
+    height: 40px;
+    font-size: 15px;
+    width: 150px;
+}

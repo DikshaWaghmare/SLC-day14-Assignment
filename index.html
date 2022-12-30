@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+
+</head>
+
+  <body>
+    <form class="container">
+
+      <label>Enter Your Full Name:</label>
+      <input id="user_name" type="text" placeholder="Enter Full Name" style="width: 300px;" />
+      <p id="n-err"></p>
+
+      <label>Enter Email:</label>
+      <input id="user_email" type="email" placeholder="abc@gmail.com" style="width: 300px;" />
+      <p id="e-err"></p>
+
+      <label>Enter DOB:</label>
+      <input id="user_dob" type="date" placeholder=" dd-mm-year" /><br>
+      <p id="dob-err"></p>
+
+      <label>Enter Age:</label>
+      <input id="user_age" type="number" placeholder="Enter Age" /><br>
+      <p id="age-err"></p>
+
+      <label>Enter Contact:</label>
+      <input id="user_contact" type="tel" placeholder="0000000000" /><br>
+      <p id="c-err"></p>
+
+      <label>Select designation: </label>
+      <select style="height: 30px; width: 200px;" id="user_d">
+          <option selected>Select option</option>
+          <option value="1">Student</option>
+          <option value="2">Teacher</option>
+          <option value="3">Principle</option>
+      </select><br>
+      <p id="d-err"></p>
+
+      <label for="formFile" class="form-label">Upload Identity card: </label>
+      <input id="user_idcard" type="file" name="formFile"><br>
+      <p id="id-err"></p>
+
+      <label for="formFile" class="form-label">Upload Passphoto: </label>
+      <input id="user_passphoto" type="file" name="formFile"><br>
+      <p id="p-err"></p>
+
+      <button type="button" onclick="validate()">Submit</button>
+    </form>
+
+    <script src="./Js/script.js"></script>
+  </body>
+
+</html>
